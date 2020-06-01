@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       draw()
       displayShape()
       addScore()
+      gameOver()
     }
   }
 
@@ -194,5 +195,12 @@ function addScore(){
   }
 }
 
+//functionality to identify the game over
+function gameOver(){
+  if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
+    scoreDisplay.innerHTML = "GAME OVER. SCORE : " + score
+    clearInterval(timerId)
+  }
+}
 
 })
