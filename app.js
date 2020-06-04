@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
       scoreDisplay.innerHTML = "GAME OVER. SCORE : " + score
       clearInterval(timerId)
+      isStarted = false
     }
   }
 
