@@ -8,12 +8,17 @@
   display: flex;
   flex-wrap: wrap;
   background-color: yellow;
+  /* outline: 1px dotted black; */
 }
+
 
 .grid div{
   height: 20px;
   width: 20px;
+  outline: 1px solid white;
 }
+
+
 
 .tetromino {
   background-color: blue;
@@ -31,4 +36,5 @@
 .mini-grid div{
   height: 20px;
   width: 20px;
+  outline: 1px solid white;
 }
